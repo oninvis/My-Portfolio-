@@ -6,9 +6,9 @@
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="/templates/achievements.html" class="nav-link">Achievements</a></li>
-        <li class="nav-item"><a href="/templates/projects.html" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="{{url_for('index')}}" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="{{url_for('achievements')}}" class="nav-link">Achievements</a></li>
+        <li class="nav-item"><a href="{{url_for('projects')}}" class="nav-link">Projects</a></li>
         <li class="nav-item"><a href="mailto:deoreom8@gmail.com?body=Your%20name%20%3A%20%0D%0AYour%20message%20%3A%20" class="nav-link">Contact</a></li>
       </ul>
     </header>
