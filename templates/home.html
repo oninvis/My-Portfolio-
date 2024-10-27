@@ -9,9 +9,14 @@
 </head>
 <body>
     {% include 'header.html' %}
+    {%include 'stylesheet.html'%}
     <h1 class = "text-center" style = "font-family: 'Courier New', Courier, monospace;margin-top: 100px;">Hi this is me </h1>
     <div class = "img-fluid">
-    <img class = "img-fluid" style = "margin-bottom : 20px;" src="/static/demo3.jpg" >
+        <div class="image-container">
+            <img class = "img-fluid" style = "margin-bottom : 20px;" src="/static/demo3.jpg" >
+            <div class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum, eveniet quo numquam excepturi quisquam facilis a ullam esse, illo reiciendis praesentium fugiat! Iste fugit cupiditate at dolorum quis impedit.</div>
+        </div>   
+    
    
         <div class = "row">
             <img class = "img-fluid col-6" src = "/static/demo4.jpg" style = "margin-bottom: 20px;">

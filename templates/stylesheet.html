@@ -1,0 +1,38 @@
+<style>
+    .image-container {
+        position: relative;
+        width: 100%; /* Adjust size as needed */
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0; /* Hidden initially */
+        animation: fadeIn 4s forwards; /* Fade-in effect */
+        background: rgba(0, 0, 0, 0.5); /* Optional: background with transparency */
+        padding: 10px;
+        border-radius: 10px; /* Optional: rounded corners */
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translate(-50%, -60%);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    }
+</style>
